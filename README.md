@@ -1,6 +1,6 @@
 # DataFrame Project
 
-The DataFrame project is a Python application built with the Streamlit library. It provides a user-friendly interface for gathering patient data and performing data analysis using the power of pandas DataFrames.
+The DataFrame project is a Python application built with the Streamlit library. It provides a user-friendly interface for gathering patient data and performing data analysis using the power of pandas DataFrames and NLP tools.
 
 ## Features
 
