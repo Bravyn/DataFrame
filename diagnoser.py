@@ -14,7 +14,7 @@ def get_patient_data():
     age = st.slider("Drag to select age",min_value=5,max_value= 120,step= 1)
     st.caption(f"Your age is : {age}")
     feeling = st.text_area("How are you feeling?")
-    origin_data = st.radio("When did you start feeling this way", ["Today", "Yesterday"])
+    origin_data = st.radio("When did you start feeling this way", ["Today", "Other day"])
 
     if origin_data.lower() == 'today':
         time = st.time_input("What time did it start")
