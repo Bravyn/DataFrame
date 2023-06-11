@@ -6,6 +6,7 @@ import pandas as pd
 
 
 def get_patient_data():
+    st.title("Diagnoser")
     st.header("Let us know how you feel")
     name = st.text_input("What is your name?")
     st.caption(f"Nice to meet you: {name.capitalize()}!")
