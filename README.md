@@ -34,7 +34,7 @@ The DataFrame project is a Python application built with the Streamlit library. 
 4. Run the application:
 
    ```bash
-   streamlit run app.py
+   streamlit run diagnoser.py
    ```
 
 5. Open your web browser and navigate to `http://localhost:8501` to access the DataFrame application.
