@@ -32,6 +32,15 @@ def questionnaires(questionnaires = questionnaires):
                 
                 display_questionnaire_items()
 
+            elif i == 1:
+                st.info(
+                    """
+                The Selection of these subsamples was done 
+                centrally at the head office—within a cluster, one in every two households was selected for the full 
+                questionnaires, and the remaining households were selected for the short questionnaires. It is important to 
+                note that the information collected in the short questionnaires were collected from all households and from 
+                all women since these questionnaires were subsets of the full questionnaires
+                """)
             elif i == 2:
                 st.info(
                     """
@@ -48,5 +57,28 @@ def questionnaires(questionnaires = questionnaires):
                 """)
 
                 display_mens_questionnaire()
+            elif i == 5 or i == 6:
+                st.info(
+                    """
+                    The Biomarker Questionnaire collected information on anthropometry (weight and height). The long 
+                    Biomarker Questionnaire collected anthropometry measurements for children age 0–59 months, women 
+                    age 15–49, and men age 15–54, while the short questionnaire collected weight and height measurements 
+                    only for children age 0–59 months.
+                    """)
+            elif i == 7:
+                st.info(
+                    """
+                    The Fieldworker Questionnaire was used to collect basic background information on the people who 
+                    collected data in the field. This included team supervisors, interviewers, and biomarker technicians
+                    """)
             else:
-                st.info("Coming soon")
+                st.success("")
+    st.caption(
+                """
+                All questionnaires except the Fieldworker Questionnaire were translated into the Swahili language to make 
+                it easier for interviewers to ask questions in a language that respondents could understand. All
+                questionnaires were programmed into tablet computers to allow for computer-assisted personal 
+                interviewing (CAPI) for data collection purposes, with the capability to choose Swahili or English.
+                The protocol for the 2022 KDHS was reviewed by the ICF Institutional Review Board.
+
+                """)
