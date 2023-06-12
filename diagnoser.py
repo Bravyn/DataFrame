@@ -8,7 +8,7 @@ Feel free to modify and improve as you wish
 import streamlit as st
 import time
 from sample_design import sample_design
-from utilities import questionnaires
+from questionnaires import questionnaires
 
 
 def survey_implementation():
