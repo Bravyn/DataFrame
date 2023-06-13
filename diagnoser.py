@@ -11,15 +11,28 @@ from sample_design import sample_design
 from questionnaires import questionnaires
 
 
-def survey_implementation():
-    index = 1
-    total_items = len(sample_design())
+st.warning("Site in active development.")
 
+def survey_implementation():
+    
     st.subheader(":blue[SURVEY IMPLEMENTATION]")
     st.subheader(":violet[Sample Design]")
-    for p in sample_design():
-        st.info(p)
-    st.warning("Staff Training")
+
+# Slicing the list in half to populate 2 colunms
+    total_items = sample_design()
+    half_length = len(total_items) // 2
+    first_half = total_items[:half_length]
+    second_half = total_items[half_length:]
+    colm1, colm2 = st.columns(2)
+
+    with colm1:
+        for i in first_half:
+            st.caption(f':violet{[i for i in first_half]}')
+    with colm2:
+        for i in second_half:
+            f":violet{i}"   
+
+        
 
 
 def colored_text(text):
