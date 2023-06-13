@@ -11,8 +11,7 @@ measurements = [
 
 def show_measurements(measurements = measurements):
     st.info("Anthropometric(height/weight) measurements were conducted on: ")
-    for i in measurements:
-        st.markdown(f"- {i}")
+    format_list_with_css(measurements)
     with st.expander(" Read more..."):
         st.caption(
             """

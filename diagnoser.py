@@ -12,6 +12,7 @@ from questionnaires import questionnaires
 from introduction import introduction
 from survey_implementation import survey_implementation
 from height_and_weight import show_measurements
+from training import training
 
 st.warning("Site in active development.")
 
@@ -27,5 +28,4 @@ objectives()
 survey_implementation()
 questionnaires()
 show_measurements()
-
-
+training()

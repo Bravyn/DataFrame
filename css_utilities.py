@@ -16,16 +16,21 @@ def colored_text(text):
 import streamlit as st
 
 def format_list_with_css(items):
+    
     st.markdown(
         f"""
         <style>
             .list-item {{
-                padding: 5px;
-                margin-bottom: 5px;
-                border-radius: 5px;
+                padding: 1rem;
+                margin-bottom: .7rem;
+                border-radius: .4rem;
+                
                 background-color: #f2f2f2;
                 color: #000;
-                background: rgb(100,120,136);
+                background-color: rgba(255, 255, 255, 0.5);
+                backdrop-filter: blur(.7rem);
+                box-shadow: 0 0 .7rem rgba(0, 0, 0, 0.3);
+
             }}
         </style>
         """,
@@ -34,5 +39,32 @@ def format_list_with_css(items):
 
     for item in items:
         st.markdown(f'<div class="list-item">{item}</div>', unsafe_allow_html=True)
+
+
+
+def format_card_with_css(item):
+    
+    st.markdown(
+        f"""
+        <style>
+            .item {{
+                padding: 1rem;
+                margin-bottom: .7rem;
+                border-radius: .4rem;
+                background-color: #f2f2f2;
+                color: #000;
+                font-weight: bold;
+                background-color: rgba(5, 255, 255, 0.2);
+                backdrop-filter: blur(.7rem);
+                box-shadow: 0 0 .7rem rgba(0, 0, 0, 0.3);
+
+            }}
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+    
+    st.markdown(f'<div class="item">{item}</div>', unsafe_allow_html=True)
 
 

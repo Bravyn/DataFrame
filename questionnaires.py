@@ -2,6 +2,7 @@ import streamlit as st
 from full_household import display_questionnaire_items
 from womens_survey import display_womens_questionnaire
 from mens_survey import display_mens_questionnaire
+from css_utilities import format_card_with_css
 
 questionnaires = [
     "Full Household Questionnaire",
@@ -16,7 +17,8 @@ questionnaires = [
 
 
 def questionnaires(questionnaires = questionnaires):
-    st.subheader(":blue[Questionnaires]")
+    #st.subheader(":blue[Questionnaires]")
+    format_card_with_css("Questionnaires")
     st.info("The Household, Woman's, and Biomarker questionnaires \
             were divided into full and short versions \
             to reduce fieldwork length and interviewer/respondent fatigue.")
