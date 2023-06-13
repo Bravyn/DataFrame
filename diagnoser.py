@@ -19,6 +19,7 @@ def survey_implementation():
     st.subheader(":violet[Sample Design]")
     for p in sample_design():
         st.info(p)
+    st.warning("Staff Training")
 
 
 def colored_text(text):
