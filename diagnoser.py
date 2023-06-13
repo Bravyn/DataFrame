@@ -18,22 +18,11 @@ def survey_implementation():
     st.subheader(":blue[SURVEY IMPLEMENTATION]")
     st.subheader(":violet[Sample Design]")
 
-# Slicing the list in half to populate 2 colunms
-    total_items = sample_design()
-    half_length = len(total_items) // 2
-    first_half = total_items[:half_length]
-    second_half = total_items[half_length:]
-    colm1, colm2 = st.columns(2)
-
-    with colm1:
-        for i in first_half:
-            st.caption(f':violet{[i for i in first_half]}')
-    with colm2:
-        for i in second_half:
-            f":violet{i}"   
-
-        
-
+    paragrapghs = sample_design()
+    for paragrapgh in paragrapghs:
+        with st.expander(f"{paragrapgh[:108] } :blue[_Read More..._]"):
+            st.info(paragrapgh)
+    
 
 def colored_text(text):
     st.markdown(
