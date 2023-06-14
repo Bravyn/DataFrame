@@ -2,7 +2,7 @@ import streamlit as st
 from full_household import display_questionnaire_items
 from womens_survey import display_womens_questionnaire
 from mens_survey import display_mens_questionnaire
-from css_utilities import format_card_with_css
+from css_utilities import format_card_with_css, format_list_with_css
 
 questionnaires = [
     "Full Household Questionnaire",
@@ -25,56 +25,55 @@ def questionnaires(questionnaires = questionnaires):
     for i, questionnair in enumerate(questionnaires):
         with st.expander(questionnair):
             if i == 0:
-                st.info(
+                format_list_with_css([
                     """
                     The main purpose of the Household Questionnaire was to identify women and men who were eligible for 
                         individual interviews and women age 15–49, men age 15–54, and children age 0–59 months who were 
                         eligible for anthropometry. The Household Questionnaire collected information on:
-                    """)
+                    """])
                 
                 display_questionnaire_items()
 
             elif i == 1:
-                st.info(
-                    """
+                format_list_with_css(
+                    ["""
                 The Selection of these subsamples was done 
                 centrally at the head office—within a cluster, one in every two households was selected for the full 
                 questionnaires, and the remaining households were selected for the short questionnaires. It is important to 
                 note that the information collected in the short questionnaires were collected from all households and from 
                 all women since these questionnaires were subsets of the full questionnaires
-                """)
+                """])
             elif i == 2:
-                st.info(
-                    """
+                format_list_with_css(
+                    ["""
                     The Woman’s Questionnaire was used to collect information from women age 15–49 on the following 
                     topics:
-                    """)
+                    """])
                 
                 display_womens_questionnaire()
             elif i == 4:
-                st.info(
+                format_list_with_css([
                 """
                 The Man’s Questionnaire was administered to men age 15–54 living in the households selected for long 
                 Household Questionnaires. The questionnaire collected information on:
-                """)
+                """])
 
                 display_mens_questionnaire()
             elif i == 5 or i == 6:
-                st.info(
+                format_list_with_css([
                     """
                     The Biomarker Questionnaire collected information on anthropometry (weight and height). The long 
                     Biomarker Questionnaire collected anthropometry measurements for children age 0–59 months, women 
                     age 15–49, and men age 15–54, while the short questionnaire collected weight and height measurements 
                     only for children age 0–59 months.
-                    """)
+                    """])
             elif i == 7:
-                st.info(
+                format_list_with_css([
                     """
                     The Fieldworker Questionnaire was used to collect basic background information on the people who 
                     collected data in the field. This included team supervisors, interviewers, and biomarker technicians
-                    """)
-            else:
-                st.success("")
+                    """])
+            
     st.caption(
                 """
                 All questionnaires except the Fieldworker Questionnaire were translated into the Swahili language to make 
