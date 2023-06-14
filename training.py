@@ -15,8 +15,9 @@ def training(tasks = tasks):
         """:blue[
     A total of 45 trainers drawn from KNBS, MoH, other government departments and agencies, universities, 
     and development partners participated in the training of trainers. The training was supported by ICF and 
-    was held from November 29 to December 3, 2021. The objectives of the training were to]:
+    was held from November 29 to December 3, 2021.]
     """)
+    st.write("The objectives of the training were to:")
     format_list_with_css(tasks)
 
 

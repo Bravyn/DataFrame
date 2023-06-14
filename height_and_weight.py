@@ -1,6 +1,6 @@
 #anthropometric measurements
 import streamlit as st
-from css_utilities import format_list_with_css
+from css_utilities import format_list_with_css, format_card_with_css
 
 
 measurements = [
@@ -10,6 +10,7 @@ measurements = [
 ]
 
 def show_measurements(measurements = measurements):
+    format_card_with_css("Anthropometric Measurements")
     st.info("Anthropometric(height/weight) measurements were conducted on: ")
     format_list_with_css(measurements)
     with st.expander(" Read more..."):

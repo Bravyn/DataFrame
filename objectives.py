@@ -1,5 +1,5 @@
 import streamlit as st
-from css_utilities import colored_text
+from css_utilities import colored_text, format_list_with_css, format_card_with_css
 
 def objectives():
     primary_objective = "The primary objective of the 2022 Kenya Demographic and Health Survey \
@@ -20,9 +20,9 @@ def objectives():
     "Obtain information on noncommunicable diseases and other health issues",
     "Ascertain the extent and patterns of domestic violence and female genital mutilation/cutting"
 ]
-    st.subheader("Objectives")
-    st.text("Primary Objective")
-    colored_text(primary_objective)
+    format_card_with_css("Objectives")
+    st.info("Primary Objective")
+    format_list_with_css([primary_objective])
     st.success("Specific Objectives")
     
     
