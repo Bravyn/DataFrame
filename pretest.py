@@ -14,10 +14,11 @@ pretest_objectives = ['Test the adequacy of training agenda for the main survey'
 
 def pretest(pretest_objectives = pretest_objectives):
     format_card_with_css("Pretest")
-    st.info("""The pretest consisted of classroom training and field practice for interviewers and biomarker technicians. 
-The training took place from December 11, 2021, to January 18, 2022. The objectives of the pretest were 
-to:
-""")
+    st.info(
+        """The pretest consisted of classroom training and field practice for interviewers and biomarker technicians. 
+       The training took place from December 11, 2021, to January 18, 2022. The objectives of the pretest were 
+       to:
+        """)
     format_list_with_css(pretest_objectives)
     with st.expander(":blue[Learn more]"):
         st.caption("""

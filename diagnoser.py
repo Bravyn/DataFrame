@@ -14,6 +14,7 @@ from survey_implementation import survey_implementation
 from height_and_weight import show_measurements
 from training import training
 from pretest import pretest
+from staff_training import staff_training_data
 
 st.warning("Site in active development.")
 
@@ -31,3 +32,4 @@ questionnaires()
 show_measurements()
 training()
 pretest()
+staff_training_data()

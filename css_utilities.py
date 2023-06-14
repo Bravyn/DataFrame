@@ -67,4 +67,29 @@ def format_card_with_css(item):
     
     st.markdown(f'<div class="item">{item}</div>', unsafe_allow_html=True)
 
+def format_list_with_css_blue(items):
+    
+    st.markdown(
+        f"""
+        <style>
+            .list-item2 {{
+                padding: 1rem;
+                margin-bottom: .7rem;
+                border-radius: .4rem;
+                
+                background-color: #f2f2f2;
+                color: #008;
+                background-color: rgba(255, 255, 255, 0.5);
+                backdrop-filter: blur(.7rem);
+                box-shadow: 0 0 .7rem rgba(0, 0, 0, 0.3);
+
+            }}
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+    for item in items:
+        st.markdown(f'<div class="list-item2">{item}</div>', unsafe_allow_html=True)
+
 
