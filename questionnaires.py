@@ -73,8 +73,8 @@ def questionnaires(questionnaires = questionnaires):
                     The Fieldworker Questionnaire was used to collect basic background information on the people who 
                     collected data in the field. This included team supervisors, interviewers, and biomarker technicians
                     """])
-            
-    st.caption(
+    with st.expander("All questionnaires except the Fieldworker Questionnaire were translated into the Swahili language :blue[click to read more...]"):      
+        st.caption(
                 """
                 All questionnaires except the Fieldworker Questionnaire were translated into the Swahili language to make 
                 it easier for interviewers to ask questions in a language that respondents could understand. All

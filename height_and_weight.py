@@ -13,7 +13,7 @@ def show_measurements(measurements = measurements):
     format_card_with_css("Anthropometric Measurements")
     st.info("Anthropometric(height/weight) measurements were conducted on: ")
     format_list_with_css(measurements)
-    with st.expander(" Read more..."):
+    with st.expander(" Weight measurements were taken using Seca scales with a digital display... :blue[read more]"):
         st.caption(
             """
         Weight measurements were taken using Seca scales with a digital display (model SECA 874). Children 
