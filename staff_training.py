@@ -12,6 +12,7 @@ def staff_training_data():
     combined =  [f'Total staff trained: {staff}', f'Supervisors:{supervisors}', f'Biomarker Technicians: {biomarker_technicians}',
             f'Female Interviewers: {female_interviewers}', f'Male Interviewers: {male_interviewers}',
             f'Reserves: {reserves}' ,f'Training Period: {training_period}']
+    format_card_with_css("Staff Training")
     format_list_with_css_blue(combined)
     with st.expander("""The 
             training consisted of a detailed, question-by-question explanation of the questionnaires, accompanied by 
