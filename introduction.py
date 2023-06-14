@@ -1,5 +1,5 @@
 import streamlit as st
-from css_utilities import format_card_with_css, format_list_with_css
+from css_utilities import format_card_with_css, format_list_with_css, format_list_with_css_blue
 
 def introduction():
     space_left, space_right , c= st.columns(3)
@@ -22,11 +22,11 @@ def introduction():
     with col2:
         format_card_with_css("Technical Support and Assistance")
 
-        st.markdown("- Provided by the DHS Program\
+        st.markdown(" Provided by the DHS Program and\
                     funded by USAID")
-        format_list_with_css(["Other Organizations offering Support"])
-        st.markdown("- Bill & Melinda Gates Foundation")
-        st.markdown("- World Bank")
-        st.markdown("- UNICEF")
-        st.markdown(" - UNFPA")
+        format_list_with_css_blue(["Other Organizations offering Support"])
+        st.markdown(" Bill & Melinda Gates Foundation")
+        st.markdown(" World Bank")
+        st.markdown(" UNICEF")
+        st.markdown(" UNFPA")
         st.caption(" and more...")
