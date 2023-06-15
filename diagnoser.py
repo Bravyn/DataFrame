@@ -37,6 +37,7 @@ with tab2:
     show_measurements()
 with tab3:
     findings()
+    data_processing()
 with more:
     survey_implementation()
     questionnaires()
@@ -44,7 +45,7 @@ with more:
     pretest()
     staff_training_data()
     logistics()
-    data_processing()
+    
 
 
 
