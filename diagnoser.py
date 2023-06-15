@@ -15,6 +15,8 @@ from height_and_weight import show_measurements
 from training import training
 from pretest import pretest
 from staff_training import staff_training_data
+from fieldwork_logistics import logistics
+from data_processing import data_processing
 
 st.warning("Site in active development.")
 
@@ -23,8 +25,8 @@ def sidebar():
     st.sidebar.image('./logo.png', caption="@Bravyn", width=180)
     #st.sidebar.header("Menu")
     menu_option = st.sidebar.radio(":blue[Menu Options]",["Intoduction", "View Implementation", "Objectives"])
-   
 #sidebar()
+
 introduction()
 objectives()
 survey_implementation()
@@ -33,3 +35,5 @@ show_measurements()
 training()
 pretest()
 staff_training_data()
+logistics()
+data_processing()

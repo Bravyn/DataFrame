@@ -93,3 +93,35 @@ def format_list_with_css_blue(items):
         st.markdown(f'<div class="list-item2">{item}</div>', unsafe_allow_html=True)
 
 
+def pretty_title(text):
+    st.markdown(
+        f"""
+                <style>
+                  .pretty_title{{
+                      
+                        background-color: #fff9;
+                        border: 1px solid #000;
+                        border-radius: 5px;
+                        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                        padding: 1.1rem;
+                        margin: .3rem;  
+                        font-size: 1rem;
+                        font-weight: bold;
+                      
+                  }}
+                </style>
+                """, unsafe_allow_html=True)
+    st.markdown(
+        f"""
+        <div class = "pretty_title">{text}></div>
+        """, unsafe_allow_html=True
+    )
+    
+    
+    
+       
+
