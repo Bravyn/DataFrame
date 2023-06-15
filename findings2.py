@@ -16,7 +16,7 @@ def findings():
     
     pretty_title("FINDINGS")
     df = pd.DataFrame(data)
-    st.write(df)
+    st.dataframe(df)
     st.bar_chart(df)
 
 

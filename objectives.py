@@ -29,7 +29,14 @@ def objectives():
     for index, objective in enumerate(objectives):
         st.write(objective)
         with st.expander(":blue[Click to view findings]"):
-            st.write("This is more...")
+            if index == 2:
+                format_list_with_css([
+                    """Seventy-nine percent of women reported their health status as good or very good, as compared with 
+                85% of men.
+                """])
+                st.metric("Women health status", 79, 85)
+            else:             
+                st.write("This is more...")
         #time.sleep(.3)
         
   
