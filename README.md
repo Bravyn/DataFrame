@@ -28,13 +28,13 @@ The DataFrame project is a Python application built with the Streamlit library. 
 3. Install the dependencies:
 
    ```bash
-   pip install -r requirements.txt
+   pip install streamlit
    ```
 
 4. Run the application:
 
    ```bash
-   streamlit run diagnoser.py
+   streamlit run diagnoser.py#named diagnoser to 'diagnose' issues from data and visualize them
    ```
 
 5. Open your web browser and navigate to `http://localhost:8501` to access the DataFrame application.
