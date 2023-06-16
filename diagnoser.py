@@ -27,11 +27,12 @@ st.set_page_config(
 st.warning("Site in active development.")
 
 
-home_tab, tab1, tab2, tab3, more = st.tabs(["Home","Objectives", "Measurements", "Findings", "More"])
+home_tab, tab1, tab2, tab3, more = st.tabs(["[Home]","Objectives", "Measurements", "Findings", "More"])
 
 with home_tab:
     introduction()
 with tab1:
+    obje = True
     objectives()
 with tab2:
     show_measurements()

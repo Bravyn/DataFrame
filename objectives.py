@@ -29,6 +29,12 @@ def objectives():
     for index, objective in enumerate(objectives):
         st.write(objective)
         with st.expander(":blue[Click to view findings]"):
+            if index == 0:
+                format_list_with_css(["""
+                About one-third of women (33%) and nearly half (48%) of men have never been married. Fifty-five 
+                percent of women are either married or living together with a man as if married, while 46% of men are 
+                married or living together with a woman as if married.
+                """])
             if index == 2:
                 format_list_with_css([
                     """Seventy-nine percent of women reported their health status as good or very good, as compared with 
