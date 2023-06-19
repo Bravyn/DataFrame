@@ -18,18 +18,19 @@ from staff_training import staff_training_data
 from fieldwork_logistics import logistics
 from data_processing import data_processing
 from findings2 import findings
+from sidebar import sidebar
 
 st.set_page_config(
     page_title="The 2022 Kenya Demographic and Health Survey",
     page_icon= ":eyeglasses"
 )
 
-st.warning("Site in active development.")
+st.warning("This website is in active development.")
+#sidebar() 
 
+home_tab, tab1, tab2, tab3, more = st.tabs(["Home","Objectives", "Measurements", "Findings", "More"])
 
-home_tab, tab1, tab2, tab3, more = st.tabs(["[Home]","Objectives", "Measurements", "Findings", "More"])
-
-with home_tab:
+with home_tab:   
     introduction()
 with tab1:
     obje = True
