@@ -19,13 +19,14 @@ from fieldwork_logistics import logistics
 from data_processing import data_processing
 from findings2 import findings
 from sidebar import sidebar
+emojis = ["☺️"," 🐶", "🐱", "😀", "🐭", "🐹", "🐰", "🦊", "🐻", "🐼"]
 
 st.set_page_config(
     page_title="The 2022 Kenya Demographic and Health Survey",
     page_icon= ":eyeglasses"
 )
 
-st.warning("This website is in active development.")
+st.warning(f"This website is in active development.{emojis[0]}")
 #sidebar() 
 
 home_tab, tab1, tab2, tab3, more = st.tabs(["Home","Objectives", "Measurements", "Findings", "More"])
